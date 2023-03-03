@@ -28,6 +28,7 @@ while True:
     OP090.swipeButton()
     OP090.robotAuto()
     OP090.robotRunning()
+    OP090.safetyGate()
     print ("##################")
     time.sleep(5)
 

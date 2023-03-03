@@ -10,7 +10,8 @@
                     "Light_Curtain": ["Sta90A_90B_Saf.LC1.Blocked", "Sta90A_90B_Saf.LC2.Blocked"],
                     "Swipe_Button": ["Program:Sta90A_90B.Station.Status.Cycle_Start_PB" ], 
                     "Robot_Auto": ["Sta90_R1.In_Auto", "Sta90_R2.In_Auto"],
-                    "Robot_Running": ["Sta90_R1.I.do03", "Sta90_R2.I.do03"] 
+                    "Robot_Running": ["Sta90_R1.I.do03", "Sta90_R2.I.do03"], 
+                    "Safety_Gate": ["Zone01_Saf.All_Gate_Doors_Closed"]
                 
                 }
         },
@@ -22,7 +23,8 @@
                     "Light_Curtain": ["Sta10_Saf.LC_ALL_Cleared"],
                     "Swipe_Button": ["Program:Sta90A_90B.Station.Status.Cycle_Start_PB"] , 
                     "Robot_Auto": ["Sta90_R1.In_Auto", "Sta90_R2.In_Auto"],
-                    "Robot_Running": ["Sta90_R1.I.do03", "Sta90_R2.I.do03"] 
+                    "Robot_Running": ["Sta90_R1.I.do03", "Sta90_R2.I.do03"],
+                    "Safety_Gate": ["Zone01_Saf.All_Gate_Doors_Closed"]
                 }
             }
 ]
