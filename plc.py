@@ -108,6 +108,21 @@ class station:
             output.append(value)
         print(output)
         return output
+    
+    # Safety Door is closed or not tag value for station being called
+    def safetyGate(self):
+        attribute = "Safety_Gate"
+        station_available, data = station.openJson()
+        for i in station_available:
+            for j in data["station_Detail"]:
+                if j["Station_Name"] == self.name:
+                    safetyGate = j["Tag_Name"]["Safety_Gate"]
+        output = []
+        for index, tagName in enumerate(safetyGate, start=1):
+            value = station.readPLC(self,attribute,tagName, index)
+            output.append(value)
+        print(output)
+        return output
 
     def __str__(self):
         return f"[{self.name}]"
