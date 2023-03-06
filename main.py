@@ -8,6 +8,8 @@ import time
 OP090 = station("OP090")
 ipAdd = OP090.selectIP()
 
+FR120 = station("FR120")
+FR120ipAdd = FR120.selectIP()
 
 #########################################
 
@@ -23,12 +25,20 @@ Element 4: Value of Tag
 
 ######################################
 while True:
-    print("START MONITORING")
-    OP090.lcTag()
-    OP090.swipeButton()
-    OP090.robotAuto()
-    OP090.robotRunning()
-    OP090.safetyGate()
+    print("START MONITORING - FR120")
+    FR120.lcTag()
+    FR120.swipeButton()
+    FR120.robotAuto()
+    FR120.robotRunning()
+    FR120.safetyGate()
+
+    print("START MONITORING - OP090")
+    
+    # OP090.lcTag()
+    # OP090.swipeButton()
+    # OP090.robotAuto()
+    # OP090.robotRunning()
+    # OP090.safetyGate()
     print ("##################")
     time.sleep(5)
 
