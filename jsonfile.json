@@ -15,6 +15,34 @@
                 }
         },
         {
+            "Station_Name": "OP100",
+            "Station_IPadd": "10.110.50.201",
+            "Tag_Name": 
+                {
+                  
+                    "Light_Curtain": ["Sta100_Saf.LC1.Blocked", "Sta100_Saf.LC2.Blocked"],
+                    "Swipe_Button": ["Program:Sta100.Station.Status.Cycle_Start_PB" ], 
+                    "Robot_Auto": ["Sta100_R1.In_Auto", "Sta100_R2.In_Auto","Sta100_MH.In_Auto"],
+                    "Robot_Running": ["Sta100_R1.I.do03", "Sta100_R2.I.do03", "Sta100_MH.I.do03"], 
+                    "Safety_Gate": ["Sta120_Safety_Gate.Closed", "Sta200_Safety_Gate.Closed"]
+                
+                }
+        },
+        {
+            "Station_Name": "OP120",
+            "Station_IPadd": "10.110.50.201",
+            "Tag_Name": 
+                {
+                  
+                    "Light_Curtain": ["Sta120_Saf.LC1.Blocked", "Sta120_Saf.LC2.Blocked"],
+                    "Swipe_Button": ["Program:Sta120.Station.Status.Cycle_Start_PB" ], 
+                    "Robot_Auto": ["Sta120_R1.In_Auto", "Sta120_R2.In_Auto","Sta120_MH.In_Auto"],
+                    "Robot_Running": ["Sta120_R1.I.do03", "Sta120_R2.I.do03", "Sta120_MH.I.do03"], 
+                    "Safety_Gate": ["Sta120_Safety_Gate.Closed", "Sta200_Safety_Gate.Closed"]
+                
+                }
+        },
+        {
             "Station_Name": "OP010",
             "Station_IPadd": "10.110.50.205", 
             "Tag_Name": 
