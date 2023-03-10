@@ -1,7 +1,6 @@
 {
     "station_Detail" :[
         {
-            
             "Station_Name": "OP090",
             "Station_IPadd": "10.110.50.207",
             "Tag_Name": 
@@ -17,7 +16,7 @@
         },
         {
             "Station_Name": "OP010",
-            "Station_IPadd": "10.110.50.208", 
+            "Station_IPadd": "10.110.50.205", 
             "Tag_Name": 
                 {
                     "Light_Curtain": ["Sta10_Saf.LC_ALL_Cleared"],
@@ -28,8 +27,8 @@
                 }
         },
         {
-        "Station_Name": "OP020",
-        "Station_IPadd": "10.110.50.208", 
+        "Station_Name": "OP030",
+        "Station_IPadd": "10.110.50.205", 
         "Tag_Name": 
             {
                 "Light_Curtain": ["Sta10_Saf.LC_ALL_Cleared"],
