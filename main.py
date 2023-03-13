@@ -17,6 +17,10 @@ OP100ipAdd = OP100.selectIP()
 OP120 = station("OP120")
 OP120ipAdd = OP120.selectIP()
 
+JLLong = station("JLLONG")
+JLLongIpAdd = JLLong.selectIP()
+
+
 #########################################
 
 """
@@ -31,6 +35,19 @@ Element 4: Value of Tag
 
 ######################################
 while True:
+
+
+    print("START MONITORING - JLLong")
+
+
+    JLLong.onePart()
+    JLLong.prodCounter()
+    JLLong.prodHourCounter()
+
+    print ("##################")
+    time.sleep(5)
+
+
     # print("START MONITORING - FR120")
     # FR120.lcTag()
     # FR120.swipeButton()
@@ -46,23 +63,16 @@ while True:
     # OP090.robotRunning()
     # OP090.safetyGate()
 
-    print("START MONITORING - FR120")
-    OP100.lcTag()
-    OP100.swipeButton()
-    OP100.robotAuto()
-    OP100.robotRunning()
-    OP100.safetyGate()
+    # print("START MONITORING - FR120")
+    # OP100.lcTag()
+    # OP100.swipeButton()
+    # OP100.robotAuto()
+    # OP100.robotRunning()
+    # OP100.safetyGate()
 
-    print("START MONITORING - FR120")
-    OP100.lcTag()
-    OP100.swipeButton()
-    OP100.robotAuto()
-    OP100.robotRunning()
-    OP100.safetyGate()
-
-
-    print ("##################")
-    time.sleep(5)
-
-
-
+    # print("START MONITORING - FR120")
+    # OP100.lcTag()
+    # OP100.swipeButton()
+    # OP100.robotAuto()
+    # OP100.robotRunning()
+    # OP100.safetyGate()

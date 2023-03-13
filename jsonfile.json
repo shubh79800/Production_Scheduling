@@ -15,6 +15,16 @@
                 }
         },
         {
+            "Station_Name": "JLLONG",
+            "Station_IPadd": "10.10.16.132",
+            "Tag_Name": 
+                {
+                    "One_Part_Trigger":["ZONE2_PRODUCTION.Trigger"],
+                    "Production_Counter": ["ZONE2_PRODUCTION.ShiftCounter.ACC"],
+                    "Production_Hourly_Counter": ["ZONE2_PRODUCTION.HourCounter.ACC"]
+                }
+        },
+        {
             "Station_Name": "OP100",
             "Station_IPadd": "10.110.50.201",
             "Tag_Name": 

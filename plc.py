@@ -25,7 +25,7 @@ class station:
         with PLC(self.ipAdd) as comm:
             ret = comm.Read(tagName)
             # print ("{}:{} ({}) = {}".format(self.name, attribute, index, int(ret.Value)))
-            response = [self.name,attribute, index, int(ret.Value)]
+            response = [self.name,attribute, index, ret.Value]
             return response
 
     # Find name of program inside one PLC
@@ -124,5 +124,51 @@ class station:
         print(output)
         return output
 
+    def onePart(self):
+        attribute = "One_Part_Trigger"
+        station_Available, data = station.openJson()
+        for i in station_Available:
+            for j in data["station_Detail"]:
+                if j["Station_Name"] == self.name:
+                    onePart = j["Tag_Name"]["One_Part_Trigger"]
+        output = []
+        for index, tagName in enumerate(onePart, start=1):
+            value = station.readPLC(self,attribute,tagName, index)
+            output.append(value)
+        print(output)
+        return output
+    
+    def prodCounter(self):
+        attribute = "Production_Counter"
+        station_Available, data = station.openJson()
+        for i in station_Available:
+            for j in data["station_Detail"]:
+                if j["Station_Name"] == self.name:
+                    prodCounter = j["Tag_Name"]["Production_Counter"]
+        output = []
+        for index, tagName in enumerate(prodCounter, start=1):
+            value = station.readPLC(self,attribute,tagName, index)
+            output.append(value)
+        print(output)
+        return output
+    
+
+    def prodHourCounter(self):
+        attribute = "Production_Hourly_Counter"
+        station_Available, data = station.openJson()
+        for i in station_Available:
+            for j in data["station_Detail"]:
+                if j["Station_Name"] == self.name:
+                    prodHourCounter = j["Tag_Name"]["Production_Hourly_Counter"]
+        output = []
+        for index, tagName in enumerate(prodHourCounter, start=1):
+            value = station.readPLC(self,attribute,tagName, index)
+            output.append(value)
+        print(output)
+        return output
+
     def __str__(self):
         return f"[{self.name}]"
+
+
+
